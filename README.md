@@ -17,3 +17,12 @@ cd Twisted-17.1.0
 
 python3 setup.py install
 ```
+
+2. `No module named _sqlite3` 
+
+```
+sudo apt install libsqlite3-dev
+
+./configure --enable-loadable-sqlite-extensions && sudo make && sudo make altinstall
+
+```
